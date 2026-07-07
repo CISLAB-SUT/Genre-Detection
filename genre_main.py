@@ -83,7 +83,7 @@ if train:
 ####^^#### GENRE DETECTION EVALUATION ####^^####
 if test:
     if ensemble:
-        model_paths = "./ensemble_models/"
+        model_paths = "./"
         models_names = os.listdir(model_paths)
         checkpoint_paths = [
             os.path.join(model_paths, model_folder, checkpoint)
@@ -95,7 +95,7 @@ if test:
         print("Checkpoints found for ensemble::\n", checkpoint_paths)
 
     else:
-        output_dir = f"./ensemble_models/{fine_type}_genre_chkp/"
+        output_dir = f"./{fine_type}_genre_chkp/"
         checkpoints = sorted([int(d.replace("checkpoint-", "")) for d in os.listdir(output_dir) if d.startswith("checkpoint-")])
 
         print("\nLoaded Checkpint:", f"checkpoint-{checkpoints[epoch_number]}\n")

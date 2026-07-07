@@ -203,7 +203,7 @@ def train_model(model, tokenizer, train_dataset, test_dataset, fine_type):
     '''
     # Setting up Fine-tune training configurations
     training_args = TrainingArguments(
-        output_dir=f"./ensemble_models/{fine_type}_genre_chkp",
+        output_dir=f"./{fine_type}_genre_chkp",
         fp16=True,
         eval_strategy="epoch",
         # eval_steps=50,
@@ -217,7 +217,7 @@ def train_model(model, tokenizer, train_dataset, test_dataset, fine_type):
         gradient_accumulation_steps=4,
         num_train_epochs=30,
         weight_decay=0.01,
-        logging_dir=f"./ensemble_models/{fine_type}_genre_chkp/logs",
+        logging_dir=f"./{fine_type}_genre_chkp/logs",
         logging_strategy="epoch",
 
     )

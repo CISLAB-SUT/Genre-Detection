@@ -15,11 +15,7 @@ page_data = pd.read_excel("page_data.xlsx")
 
 
 # Test IDs
-test_ids = np.load("genre_test_ids_new.npy")
-# test_ids = np.load('300_pages.npy')
-# np.random.shuffle(test_ids_new)
-# test_ids = np.append(test_ids, test_ids_new[:100])
-print(len(test_ids))
+test_ids = np.load("genre_test_ids.npy")
 
 
 labels_converted = {

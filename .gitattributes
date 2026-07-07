@@ -1,0 +1,3 @@
+distil_genre_chkp/ filter=lfs diff=lfs merge=lfs -text
+distil_genre_chkp/checkpoint-4050/*.pt filter=lfs diff=lfs merge=lfs -text
+distil_genre_chkp/checkpoint-4050/*.safetensors filter=lfs diff=lfs merge=lfs -text

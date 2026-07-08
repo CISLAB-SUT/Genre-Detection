@@ -98,3 +98,4 @@ The script outputs a detailed classification report including:
 *   **GPU Support:** The code is configured to run on CUDA. Ensure you have a compatible GPU and drivers installed.
 *   **Data Preprocessing:** The `Genre_Funcs.py` module handles tokenization and padding. Ensure this file is in the same directory as the main script.
 *   **Test Split:** The test set is strictly defined by `genre_test_ids_new.npy` to ensure consistent evaluation across different runs.
+*   **Ensembling:** Due to GitHub's file size limits, only the best-performing fine-tuned model (DistilBERT) is included in this repository. To access the remaining models for ensembling, please contact the contributors.
